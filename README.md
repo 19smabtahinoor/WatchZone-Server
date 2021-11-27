@@ -17,13 +17,13 @@
 
 ## Features
 
-- This website is a e-commerce website for watch.
-- This website is a full stack website.
-- You can buy any watch from this website
-- You can manage your order.
-- You can see only your order.
-- Admin is able to manage the all user orders, manage products, make admin etc.
-- User Authentication, Private Route etc....
+- WatchZone  is a watch ecommerce website  where you can buy watches..
+- Implemented an awesome ui with React JS and Tailwind CSS.
+- Using Node JS to create REST API and Implemented to load watches in the home page and products page.
+- Implemented User Authentication with Firebase Auth.
+- Implemented a dashboard for users where he/she can see his/her orders and leave a review.
+- Implemented an admin dashboard where only admin can manage (add,delete,update) all user’s orders , manage all products , make another admin with email address etc.
+- Implemented a payment gateway for users.
 
 ## 💻 Developed By
 
