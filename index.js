@@ -31,7 +31,8 @@ client.connect(err => {
 
     //POST (Product)
     app.post('/products', async (req, res) => {
-        let newProduct = req.body;
+        try{
+            let newProduct = req.body;
         const image = req.files.image;
         const imageData = image.data;
         const encodedPic = imageData.toString('base64');
@@ -39,6 +40,8 @@ client.connect(err => {
         newProduct['image'] = imageBuffer;
         const result = await productCollection.insertOne(newProduct);
         res.send(result);
+        } 
+        catch{ err => console.log(err)}
     })
 
     //GET(Product)
